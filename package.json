@@ -5,7 +5,8 @@
   "license": "MIT",
   "lint-staged": {
     "*.js": [
-      "standard --fix"
+      "standard --fix",
+      "yarn run test:staged"
     ]
   },
   "husky": {
@@ -23,6 +24,7 @@
     "standard": "^16.0.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
   }
 }
