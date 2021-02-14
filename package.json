@@ -26,7 +26,8 @@
   },
   "scripts": {
     "test": "jest --silent --noStackTrace --passWithNoTests",
-    "test:unit": "yarn test -- --watch --verbose",
+    "test:unit": "yarn test -- --watch -c jest-unit-config.js",
+    "test:integration": "yarn test -- --watch -c jest-integration-config.js",
     "test:staged": "yarn test -- --findRelatedTests",
     "test:ci": "yarn test -- --coverage"
   }
