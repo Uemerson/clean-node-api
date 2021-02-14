@@ -11,7 +11,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run test:ci"
     }
   },
   "standard": {
@@ -25,6 +26,7 @@
   },
   "scripts": {
     "test": "jest --watch --silent --verbose --noStackTrace",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage"
   }
 }
