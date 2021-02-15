@@ -16,7 +16,9 @@
     }
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "devDependencies": {
     "husky": "^4.3.8",
@@ -30,5 +32,8 @@
     "test:integration": "yarn test -- --watch -c jest-integration-config.js",
     "test:staged": "yarn test -- --findRelatedTests",
     "test:ci": "yarn test -- --coverage"
+  },
+  "dependencies": {
+    "validator": "^13.5.2"
   }
 }
